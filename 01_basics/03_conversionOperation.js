@@ -1,3 +1,5 @@
+/*
+
 // Number conversion 
 
 let score = "33"
@@ -48,3 +50,47 @@ let someNumber = 33  // gives 33 as string
 let string  = String(someNumber);
 console.log(string)
 console.log(typeof string)
+
+
+*/ 
+
+
+// ***************** Operations **************
+let value  = 3
+let negvalue = -value
+// console.log(negvalue)
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2/2)
+// console.log(2%2)
+// console.log(2**3)  // 2 power 3
+
+let str1 = "hello"
+let str2 = " yash"
+let str3 = str1 +str2  // only + allowed in strings
+console.log(str3)
+
+console.log("1" + 2);  // gives 12
+console.log(1 + "2");  // gives 12
+console.log("1" + 2 + 2);  // gives 122
+console.log(1 + 2 + "2");  // gives 32
+// Reason : in standard documentation 
+
+
+console.log(true);  // gives true
+// In JavaScript, unary + converts a value into a number , similar to Number() function
+console.log(+true);  // gives 1
+// console.log(true+);  // gives error 
+console.log(+"")  // gives 0
+console.log(+"yash")  // gives NaN
+
+
+let num1 , num2, num3
+num1 = num2 = num3 = 2+2;
+           
+let gameCounter = 10;
+gameCounter++;  // value increases by 1 but it is a postfix
+++gameCounter;  // value increases by 1 but it is a prefix
+console.log(gameCounter); 
