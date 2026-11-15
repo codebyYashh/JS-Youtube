@@ -68,3 +68,33 @@ console.log(Object.values(tinderUser));  // returns an array
 console.log(Object.entries(tinderUser));  // returns an array
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+
+// Object destructuring and JSON API
+const course = {
+    coursename : "JS in hindi",
+    price : "999",
+    courseinstructor : "hitesh"
+}
+
+// const {courseinstructor} = course
+const {courseinstructor : instr} = course  // syntax to destructure an object
+// console.log(courseinstructor)
+console.log(instr)
+
+
+// react thing 
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "hitesh")
+
+
+// ******** API ******** 
+// JSON api syntax 
+// {
+//     "name" : "hitesh",
+//     "coursename" : "JS in hindi",
+//     "price" : "free"
+// }
