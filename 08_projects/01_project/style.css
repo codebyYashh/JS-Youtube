@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #fff;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #e8e8e8;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    display: inline-block;
+    min-width: 120px;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #111;
+    background-color: #d6d6d6;
+    border: 2px solid #888;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Main content */
+.canva {
+    width: min(90%, 450px);
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+.canva h1 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.button {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    margin: 2px 0;
+    border: 2px solid #222;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 0; /* Hide the color names inside the spans */
+}
+
+#grey {
+    background-color: grey;
+}
+
+#white {
+    background-color: white;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+.canva h2 {
+    margin-top: 18px;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.canva h2 span {
+    display: block;
+}
+
+/* Smaller screens */
+@media (max-width: 380px) {
+    .canva {
+        margin-top: 65px;
+    }
+
+    .button {
+        width: 74px;
+        height: 74px;
+    }
+
+    .canva h1 {
+        font-size: 20px;
+    }
+
+    .canva h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        min-width: 110px;
+        padding: 8px 10px;
+    }
+}
