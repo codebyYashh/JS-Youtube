@@ -1,0 +1,90 @@
+<!-- Document object model (DOM), this webpage is a document only and it is made up from objects like head , body etc... so the whole structure of a webpage(model) , ki wo kisse bana hai kya uska strucutre hai that is known as document object model, if we understood dom we can then manipulate it the way we want    -->
+
+<!-- window and document both are important objects of the browser -->
+
+<!-- difference between window and document 
+ 
+window browser ki sabse top-level object hoti hai.
+Ye browser window/tab ko represent karti hai aur browser-related functionalities provide karti hai.
+Iske through hum:
+- Browser alerts dikha sakte hain.
+- Timers use kar sakte hain.
+- Current URL access kar sakte hain.
+- Browser window ki dimensions jaan sakte hain.
+- document access kar sakte hain.
+
+
+Document Object
+document current webpage ko represent karta hai.
+
+Matlab webpage ka HTML structure, elements aur content access ya manipulate karne ke liye iska use hota hai.
+Iske through hum:
+- HTML elements select kar sakte hain.
+- New elements create kar sakte hain.
+- Text aur HTML change kar sakte hain.
+- CSS styles modify kar sakte hain.
+- DOM manipulate kar sakte hain.
+
+Technically:
+window.document === document;  // true
+Kyunki document, window ki property hai.
+
+
+JavaScript mein window ki properties ko hum generally window. lagaye bina bhi access kar sakte hain.
+window.alert("Hello");
+alert("Hello"); // both are same
+
+Similarly:
+window.document
+document
+Dono same object ko refer karte hain.
+
+means window sabse top level object aata hai uski ek property hai document jo current web page ko reperesent krta hai
+-->
+
+
+<!-- 
+What is DOM
+DOM ek programming interface hai jo HTML document ko ek tree-like structure of objects ke form mein represent karta hai.
+1. DOM ki need kyu padi?
+Maan lo tumne HTML mein ek webpage banaya:
+Ab browser is HTML ko display kar deta hai.
+
+Lekin maan lo tum chahte ho ki button click karne par:
+- Heading change ho jaye.
+- Paragraph ka colour red ho jaye.
+- Ek naya HTML element add ho jaye.
+JavaScript ko HTML document ke elements ke saath interact karne ka koi structured way chahiye.
+
+Yahin DOM ka role aata hai.
+
+DOM browser ko HTML document ka object-based representation provide karta hai, jise JavaScript access aur manipulate kar sakti hai.
+
+
+2. DOM kaise represent hota hai?
+DOM HTML document ko ek tree structure mein convert karta hai.
+Ye tree structure nodes se milkar bana hota hai.
+For example:
+- document → Document node
+- html, head, body → Element nodes
+- h1, p → Element nodes
+- "Hello World" → Text node
+
+3. DOM mein Nodes kya hote hain?
+DOM tree ke har individual part ko node kehte hain.
+
+Important node types:
+Node	Meaning
+Document node	Complete HTML document
+Element node	HTML elements like div, h1, p
+Text node	Elements ke andar ka text
+Attribute node	HTML attributes like id, class
+
+
+DOM vs HTML
+Ye difference samajhna important hai.
+- HTML ek markup language hai jisse hum webpage ka structure define karte hain.
+- DOM us HTML document ka object-based representation hai jise browser create karta hai.
+- JavaScript DOM ke through webpage ke structure, content aur styling ko dynamically change kar sakti hai.
+Ek interesting baat: JavaScript se DOM change karne par generally original HTML source file change nahi hoti. Browser mein currently loaded document ka structure change hota hai.
+-->
